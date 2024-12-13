@@ -34,7 +34,7 @@ local function insert_todo_comment()
   local comment_id = config.file_type_comment_chars_map[current_file_type] or "--" -- default to "--" if no match
 
   -- Insert TODO comment at the current line and move cursor to the end of it
-  local updated_line = current_line .. " " .. comment_id .. " TODO:  "
+  local updated_line = current_line .. comment_id .. " TODO:  "
   vim.api.nvim_set_current_line(updated_line)
 
   -- Move the cursor to the position right after "TODO: "
