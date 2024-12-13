@@ -22,10 +22,10 @@ You can customize the comment style for different file types using the `setup` m
 
 ```lua
 require('procrastinate').setup({
-  file_type_comment_chars_map = {
-    kotlin = "//",  -- Add support for Kotlin
-    ruby = "#",      -- Add support for Ruby
-  }
+    file_type_comment_chars_map = {
+        kotlin = "//",  -- Add support for Kotlin
+        ruby = "#",      -- Add support for Ruby
+    }
 })
 ```
 
@@ -34,14 +34,16 @@ This will override the default comment characters for the specified file types w
 Here is the default:
 ```lua
 file_type_comment_chars_map = {
-  lua =  "--",
-  rust = "//",
-  python = "#",
-  c = "//",
-  cpp = "//",
-  js = "//",
-  css = "/*",
-  scss = "/*",
+    lua = "--",
+    sh = "#",
+    go = "//",
+    rust = "//",
+    python = "#",
+    c = "//",
+    cpp = "//",
+    js = "//",
+    css = "/*",
+    scss = "/*",
 }
 ```
 
