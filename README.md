@@ -57,7 +57,7 @@ Simply position your cursor on any line of your code and run the following comma
 ```
 or set up a keybinding:
 ```lua
-vim.keymap.set('n', '<leader>t', ':InsertTodo<CR>')
+vim.keymap.set("n", "<leader>t", "<cmd>InsertTodo<CR>", { desc = "Insert todo" })
 ```
 
 This will automatically insert a `TODO` comment at the beginning of the current line, according to the file type’s comment style.
