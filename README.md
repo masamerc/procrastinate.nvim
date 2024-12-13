@@ -1,5 +1,5 @@
 # procrastinate.nvim
-
+![Neovim](https://img.shields.io/badge/Neovim-57A143?logo=neovim&logoColor=white&style=for-the-badge)
 > [!Note]
 > **Disclaimer**: This project was created as a practice project and for fun. It’s not meant to be taken too seriously, but if it brings you joy or helps you out, that’s a bonus.
 
