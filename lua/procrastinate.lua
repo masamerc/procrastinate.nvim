@@ -1,6 +1,8 @@
 local default_config = {
   file_type_comment_chars_map = {
     lua =  "--",
+    sh = "#",
+    go = "//",
     rust = "//",
     python = "#",
     c = "//",
