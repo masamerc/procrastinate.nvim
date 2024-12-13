@@ -1,5 +1,8 @@
 # procrastinate.nvim
 
+> [!Note]
+> **Disclaimer**: This project was created as a practice project and for fun. It’s not meant to be taken too seriously, but if it brings you joy or helps you out, that’s a bonus.
+
 ## What is this?
 
 `procrastinate.nvim` is a Neovim plugin that lets you effortlessly insert `TODO` comments into your code.
@@ -13,7 +16,12 @@ use 'masamerc/procrastinate.nvim'
 
 Or, if you prefer [lazy.nvim](https://github.com/folke/lazy.nvim):
 ```lua
-lazy { 'masamerc/procrastinate.nvim' }
+{
+    "masamerc/procrastinate.nvim",
+    config = function ()
+        require('procrastinate').setup()
+    end
+}
 ```
 
 ### Configuration
