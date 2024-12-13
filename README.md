@@ -59,8 +59,6 @@ This automatically creates a Vim command called `:InsertTodo`. Call it whenever 
 
 ## Usage
 
-1. **Add a TODO comment**
-
 Simply position your cursor on any line of your code and run the following command:
 ```vim
 :InsertTodo
