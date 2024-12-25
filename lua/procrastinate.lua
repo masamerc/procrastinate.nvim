@@ -1,3 +1,5 @@
+local M = {}
+
 local default_config = {
 	file_type_comment_chars_map = {
 		lua = "--",
@@ -15,7 +17,7 @@ local default_config = {
 
 local config = {}
 
-local function setup(user_config)
+M.setup = function(user_config)
 	-- Merge user config with default config
 	config = vim.tbl_deep_extend("force", default_config, user_config or {})
 
@@ -25,7 +27,7 @@ local function setup(user_config)
 	end, { desc = "Insert a TODO comment at the current line" })
 end
 
-local function insert_todo_comment()
+M.insert_todo_comment = function()
 	local current_line = vim.api.nvim_get_current_line()
 	local cursor_pos = vim.api.nvim_win_get_cursor(0) -- {line, col}
 
@@ -43,7 +45,4 @@ local function insert_todo_comment()
 	vim.cmd("startinsert")
 end
 
-return {
-	setup = setup,
-	insert_todo_comment = insert_todo_comment,
-}
+return M
