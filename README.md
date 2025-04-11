@@ -3,9 +3,10 @@
 > [!Note]
 > **Disclaimer**: This project was created as a practice project and for fun. It’s not meant to be taken too seriously, but if it brings you joy or helps you out, that’s a bonus.
 
-## What is this?
+## What is this? & Motivation
 
 `procrastinate.nvim` is a Neovim plugin that lets you effortlessly insert `TODO` comments into your code.
+I created this little plugin to learn how a neovim plugin works and how to make one.
 
 ## Installation & Setup
 
@@ -21,37 +22,6 @@ Or, if you prefer [lazy.nvim](https://github.com/folke/lazy.nvim):
     config = function ()
         require('procrastinate').setup()
     end
-}
-```
-
-### Configuration
-
-You can customize the comment style for different file types using the `setup` method. Here’s an example:
-
-```lua
-require('procrastinate').setup({
-    file_type_comment_chars_map = {
-        kotlin = "//",  -- Add support for Kotlin
-        ruby = "#",      -- Add support for Ruby
-    }
-})
-```
-
-This will override the default comment characters for the specified file types while keeping defaults for the others.
-
-Here is the default:
-```lua
-file_type_comment_chars_map = {
-    lua = "--",
-    sh = "#",
-    go = "//",
-    rust = "//",
-    python = "#",
-    c = "//",
-    cpp = "//",
-    js = "//",
-    css = "/*",
-    scss = "/*",
 }
 ```
 
