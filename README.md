@@ -6,6 +6,7 @@
 ## What is this? & Motivation
 
 `procrastinate.nvim` is a Neovim plugin that lets you effortlessly insert `TODO` comments into your code.
+
 I created this little plugin to learn how a neovim plugin works and how to make one.
 
 ## Installation & Setup
